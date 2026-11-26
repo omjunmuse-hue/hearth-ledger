@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hearth &amp; Ledger — the Marlowe household budget</title>
+<meta name="description" content="A working household budget: the month's plan, the ledger, bills and goals, and what the numbers mean.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+  <div class="masthead">
+    <p class="brand">Hearth <span>&amp;</span> Ledger</p>
+    <p class="tagline">The Marlowe household's money, kept in one honest book.</p>
+  </div>
+  <nav aria-label="Budget sections">
+    <a data-route="/" href="#/">Overview</a>
+    <a data-route="/budget" href="#/budget">The plan</a>
+    <a data-route="/transactions" href="#/transactions">Transactions</a>
+    <a data-route="/bills" href="#/bills">Bills &amp; goals</a>
+    <a data-route="/insights" href="#/insights">Insights</a>
+  </nav>
+</header>
+<main id="view" tabindex="-1"></main>
+<footer>
+  <p>Hearth &amp; Ledger keeps its books in your browser (local storage) — add a transaction or change the plan and it is still here when you come back.</p>
+  <p><button id="reset-books" type="button" class="ghost">Restore the opening books</button></p>
+</footer>
+<script type="module" src="src/main.js"></script>
+</body>
+</html>
